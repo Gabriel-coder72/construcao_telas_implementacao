@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo" id="logo">Dev<span>Bite</span></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" id="link-cardapio">Cardápio</a></li>
+                <li><a href="checkout.html" id="link-carrinho">Meu Carrinho</a></li>
+                <li><a href="admin.html" id="link-admin">Área Restrita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <h1>Cardápio</h1>
+
+        <div class="cardapio">
+
+
+            <aside class="categorias">
+                <h2>Categorias</h2>
+                <ul>
+                    <li><a href="#produtos" id="cat-burgers">Burgers</a></li>
+                    <li><a href="#produtos" id="cat-bebidas">Bebidas</a></li>
+                    <li><a href="#produtos" id="cat-sobremesas">Sobremesas</a></li>
+                </ul>
+            </aside>
+
+
+            <section id="produtos">
+                <div class="grade-produtos">
+
+                    <article class="card-produto" id="produto-1">
+                        <img src="./img/burguer1.jpg" alt="Git Commit Burger">
+                        <div class="card-info">
+                            <h3>Git Commit Burger</h3>
+                            <p class="preco">R$ 32,90</p>
+                            <button type="button" class="btn btn-primary" id="btn-add-1" data-id="1">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="card-produto" id="produto-2">
+                        <img src="./img/burguer2.jpg" alt="Stack Overflow Burger">
+                        <div class="card-info">
+                            <h3>Stack Overflow Burger</h3>
+                            <p class="preco">R$ 38,90</p>
+                            <button type="button" class="btn btn-primary" id="btn-add-2" data-id="2">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="card-produto" id="produto-3">
+                        <img src="./img/burguer3.jpg" alt="Null Pointer Veggie">
+                        <div class="card-info">
+                            <h3>Null Pointer Veggie</h3>
+                            <p class="preco">R$ 29,90</p>
+                            <button type="button" class="btn btn-primary" id="btn-add-3" data-id="3">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="card-produto" id="produto-4">
+                        <img src="./img/cafegelado.jpg" alt="Café Java Gelado">
+                        <div class="card-info">
+                            <h3>Café Java Gelado</h3>
+                            <p class="preco">R$ 12,00</p>
+                            <button type="button" class="btn btn-primary" id="btn-add-4" data-id="4">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="card-produto" id="produto-5">
+                        <img src="./img/refrigerante.jpg" alt="Refri Open Source">
+                        <div class="card-info">
+                            <h3>Refri Open Source</h3>
+                            <p class="preco">R$ 7,00</p>
+                            <button type="button" class="btn btn-primary" id="btn-add-5" data-id="5">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="card-produto" id="produto-6">
+                        <img src="./img/brownie.jpg" alt="Brownie 404">
+                        <div class="card-info">
+                            <h3>Brownie 404</h3>
+                            <p class="preco">R$ 16,50</p>
+                            <button type="button" class="btn btn-primary" id="btn-add-6" data-id="6">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+</body>
+
+</html>

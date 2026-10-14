@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBite - Painel Administrativo</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="admin">
+
+            <!-- MENU ADMINISTRATIVO (barra lateral) -->
+            <aside class="menu-admin">
+                <a href="admin.html" class="logo" id="logo-admin">Dev<span>Bite</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="#dashboard" id="menu-dashboard">Dashboard</a></li>
+                        <li><a href="#cadastro" id="menu-cadastro">Cadastrar Produto</a></li>
+                        <li><a href="#relatorios" id="menu-relatorios">Relatórios</a></li>
+                        <li><a href="index.html" id="menu-voltar">Voltar ao Cardápio</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="admin-conteudo">
+                <h1 id="dashboard">Painel Administrativo</h1>
+
+                <!-- FORMULÁRIO DE CADASTRO DE PRODUTO -->
+                <section class="caixa" id="cadastro">
+                    <h2>Cadastrar Produto</h2>
+
+                    <form id="form-produto">
+                        <div class="campo">
+                            <label for="prod-nome">Nome</label>
+                            <input type="text" id="prod-nome" name="nome">
+                        </div>
+
+                        <div class="campo">
+                            <label for="prod-descricao">Descrição</label>
+                            <textarea id="prod-descricao" name="descricao" rows="3"></textarea>
+                        </div>
+
+                        <div class="campo">
+                            <label for="prod-preco">Preço</label>
+                            <input type="number" id="prod-preco" name="preco" step="0.01">
+                        </div>
+
+                        <div class="campo">
+                            <label for="prod-categoria">Categoria</label>
+                            <select id="prod-categoria" name="categoria">
+                                <option value="burgers">Burgers</option>
+                                <option value="bebidas">Bebidas</option>
+                                <option value="sobremesas">Sobremesas</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="prod-imagem">Imagem</label>
+                            <input type="file" id="prod-imagem" name="imagem">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="btn-salvar-produto">Salvar</button>
+                    </form>
+                </section>
+
+                <!-- LISTA DE PEDIDOS RECENTES -->
+                <section class="caixa" id="relatorios">
+                    <h2>Pedidos Recentes</h2>
+                    <div class="tabela-scroll">
+                        <table id="tabela-pedidos">
+                            <thead>
+                                <tr>
+                                    <th>Pedido</th>
+                                    <th>Cliente</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="corpo-pedidos">
+                                <tr id="pedido-1043">
+                                    <td>#1043</td>
+                                    <td>Ada Lovelace</td>
+                                    <td>R$ 94,30</td>
+                                    <td><span class="status status-pendente" id="status-1043">Pendente</span></td>
+                                </tr>
+                                <tr id="pedido-1042">
+                                    <td>#1042</td>
+                                    <td>Linus Torvalds</td>
+                                    <td>R$ 38,90</td>
+                                    <td><span class="status status-preparo" id="status-1042">Em preparo</span></td>
+                                </tr>
+                                <tr id="pedido-1041">
+                                    <td>#1041</td>
+                                    <td>Grace Hopper</td>
+                                    <td>R$ 61,40</td>
+                                    <td><span class="status status-entregue" id="status-1041">Entregue</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+
+        </div>
+
+    </body>
+
+</html>

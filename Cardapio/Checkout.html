@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBite - Finalizar Pedido</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- CABEÇALHO COM MENU (igual ao da página inicial) -->
+        <header class="header">
+            <a href="index.html" class="logo" id="logo">Dev<span>Bite</span></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" id="link-cardapio">Cardápio</a></li>
+                    <li><a href="checkout.html" id="link-carrinho">Meu Carrinho</a></li>
+                    <li><a href="admin.html" id="link-admin">Área Restrita</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="conteudo">
+            <h1>Finalizar Pedido</h1>
+
+            <!-- TABELA DO CARRINHO -->
+            <section class="caixa" id="secao-carrinho">
+                <h2>Seu carrinho</h2>
+                <div class="tabela-scroll">
+                    <table id="tabela-carrinho">
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Preço unitário</th>
+                                <th>Quantidade</th>
+                                <th>Subtotal</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody id="corpo-carrinho">
+                            <tr id="item-1">
+                                <td>Git Commit Burger</td>
+                                <td>R$ 32,90</td>
+                                <td>2</td>
+                                <td>R$ 65,80</td>
+                                <td><button type="button" class="btn btn-danger" id="btn-remover-1"
+                                        data-id="1">Remover</button></td>
+                            </tr>
+                            <tr id="item-4">
+                                <td>Café Java Gelado</td>
+                                <td>R$ 12,00</td>
+                                <td>1</td>
+                                <td>R$ 12,00</td>
+                                <td><button type="button" class="btn btn-danger" id="btn-remover-4"
+                                        data-id="4">Remover</button></td>
+                            </tr>
+                            <tr id="item-6">
+                                <td>Brownie 404</td>
+                                <td>R$ 16,50</td>
+                                <td>1</td>
+                                <td>R$ 16,50</td>
+                                <td><button type="button" class="btn btn-danger" id="btn-remover-6"
+                                        data-id="6">Remover</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- VALOR TOTAL -->
+                <p class="total">Total: <strong id="valor-total">R$ 94,30</strong></p>
+            </section>
+
+            <!-- FORMULÁRIO DE ENTREGA E PAGAMENTO -->
+            <section class="caixa" id="secao-entrega">
+                <h2>Entrega e pagamento</h2>
+
+                <form id="form-checkout">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+
+                    <div class="campo">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" name="endereco">
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+
+                    <div class="campo">
+                        <label>Método de pagamento</label>
+                        <div class="opcoes-pagamento">
+                            <label><input type="radio" id="pgto-pix" name="pagamento" value="pix"> Pix</label>
+                            <label><input type="radio" id="pgto-cartao" name="pagamento" value="cartao"> Cartão</label>
+                            <label><input type="radio" id="pgto-dinheiro" name="pagamento" value="dinheiro">
+                                Dinheiro</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="btn-finalizar">Finalizar pedido</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+    </body>
+
+</html>
